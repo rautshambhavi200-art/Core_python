@@ -1,0 +1,9 @@
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
+n = int(input("Enter the divisor: "))
+
+print("Numbers divisible by", n, "are:")
+
+for i in range(start, end + 1):
+    if i % n == 0:
+        print(i)
