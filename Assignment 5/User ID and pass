@@ -1,0 +1,12 @@
+userid = 'admin'
+password = '1234'
+
+for i in range(3):
+    user = input("Enter your user ID: ")
+    pwd = input("Enter your password: ")
+
+    if user == userid and pwd == password:
+        print("Login successful!")
+        break
+    else:
+        print("Invalid user ID or password. Please try again.")
