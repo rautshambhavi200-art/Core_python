@@ -9,8 +9,10 @@
 ## 🛠️ Skills
 - Python
 - Basic Problem Solving
-- Git & GitHub
-- VS Code
+- SQL
+- Data analysis
+- NumPy
+- Pandas
 
 ## 📂 Currently Learning
 - Python Basics
