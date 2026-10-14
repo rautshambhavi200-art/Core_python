@@ -1,0 +1,15 @@
+def reverse_number(num):
+    rev = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        rev = rev * 10 + digit
+        temp //= 10
+
+    return rev
+
+num = int(input('Enter a number:'))
+if num == reverse_number(num):
+    print('palindrome number')
+else:
+    print('Not a palindrome number')
