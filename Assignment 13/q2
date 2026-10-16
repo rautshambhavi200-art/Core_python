@@ -1,0 +1,8 @@
+a = {"x": 1, "y": 2}
+b = {"z": 3, "w": 4}
+merged = {}
+for key in a:
+    merged[key] = a[key]
+for key in b:
+    merged[key] = b[key]
+print(merged)

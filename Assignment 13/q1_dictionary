@@ -1,0 +1,3 @@
+student = {"name": "Asha", "age": 21}
+student["course"] = "Python"
+print(student)

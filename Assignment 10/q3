@@ -1,0 +1,12 @@
+nums = [12, 5, 27, 8, 27, 3]
+largest = second = None
+for num in nums:
+    if largest is None or num > largest:
+        if num != largest:
+            largest = num
+    elif num != largest and ( second is None or num > second):
+        second = num
+if second is None:
+    print("No second largest distinct element")
+else:
+    print("Second largest:", second)

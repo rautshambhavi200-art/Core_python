@@ -1,0 +1,17 @@
+a = [5, 1, 8]
+b = [4, 2, 7]
+merged = []
+for x in a:
+    merged.append(x)
+for x in b:
+    merged.append(x)
+# Bubble sort
+i = 0
+while i < len(merged):
+    j = 0
+    while j < len(merged) - 1 - i:
+        if merged[j] > merged[j + 1]:
+            merged[j], merged[j + 1] = merged[j + 1], merged[j]
+        j += 1
+    i += 1
+print(merged)

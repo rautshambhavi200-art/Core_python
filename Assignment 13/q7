@@ -1,0 +1,5 @@
+data = {"name": "Asha", "age": 21, "city": "Pune"}
+key_to_remove = "age"
+if key_to_remove in data:
+    del data[key_to_remove]
+print(data)

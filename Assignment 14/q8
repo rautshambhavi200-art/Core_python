@@ -1,0 +1,20 @@
+words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+groups = {}
+for word in words:
+    key = ""
+    # Build a sorted signature without sorted()
+    chars = list(word)
+    i = 0
+    while i < len(chars):
+        j = 0
+        while j < len(chars) - 1 - i:
+            if chars[j] > chars[j + 1]:
+                chars[j], chars[j + 1] = chars[j + 1], chars[j]
+            j += 1
+        i += 1
+    for ch in chars:
+        key += ch
+    if key not in groups:
+        groups[key] = []
+    groups[key].append(word)
+print(list(groups.values()))

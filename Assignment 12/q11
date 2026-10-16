@@ -1,0 +1,5 @@
+text = "data analytics course"
+result = ""
+for ch in text:
+    result += "-" if ch == " " else ch
+print(result)

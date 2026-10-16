@@ -1,0 +1,8 @@
+text = "red blue red green blue red"
+frequency = {}
+for word in text.split():
+    if word in frequency:
+        frequency[word] += 1
+else:
+    frequency[word] = 1
+print(frequency)

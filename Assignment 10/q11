@@ -1,0 +1,7 @@
+nums = [6, 12, 15, 18, 24, 30]
+m = 3
+n = 2
+for num in nums:
+    if num % m == 0 and num % n == 0:
+        print(num, end=" ")
+print()

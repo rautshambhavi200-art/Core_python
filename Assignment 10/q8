@@ -1,0 +1,7 @@
+original = [10, 20, 30]
+duplicate = []
+for item in original:
+    duplicate.append(item)
+duplicate[0] = 99
+print("Original:", original)
+print("Copy:", duplicate)

@@ -1,0 +1,8 @@
+text = "banana and apple"
+result = ""
+for ch in text:
+    if ch == "a":
+        result += "$"
+    else:
+        result += ch
+print(result)

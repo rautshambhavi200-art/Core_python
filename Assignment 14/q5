@@ -1,0 +1,17 @@
+words = ["flower", "flow", "flight"]
+common = ""
+if len(words) > 0:
+    i = 0
+    while True:
+        chars = set()
+        for word in words:
+            if i < len(word):
+                chars.add(word[i])
+            else:
+                chars.add(None)
+        if len(chars) == 1 and None not in chars:
+            common += words[0][i]
+            i += 1
+        else:
+            break
+print("Common prefix:", common)

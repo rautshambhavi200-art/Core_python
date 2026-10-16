@@ -1,0 +1,14 @@
+text = "Python is very easy"
+chars = 0
+for ch in text:
+    chars += 1
+words = 0
+inside_word = False
+for ch in text:
+    if ch != " " and not inside_word:
+        words += 1
+        inside_word = True
+    elif ch == " ":
+        inside_word = False
+print("Characters (including spaces):", chars)
+print("Words:", words)

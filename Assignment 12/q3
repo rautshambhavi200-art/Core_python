@@ -1,0 +1,21 @@
+a = "listen"
+b = "silent"
+if len(a) != len(b):
+    print("Not anagrams")
+else:
+    used = [False] * len(b)
+    anagram = True
+    for ch in a:
+        found = False
+        for i in range(len(b)):
+            if b[i] == ch and not used[i]:
+                used[i] = True
+                found = True
+                break
+        if not found:
+            anagram = False
+            break
+    if anagram:
+        print("Anagrams")
+    else:
+        print("Not anagrams")

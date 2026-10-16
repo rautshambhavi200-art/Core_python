@@ -1,0 +1,8 @@
+text = "Python is easy to learn"
+result = ""
+for ch in text:
+    if ch == " ":
+        result += "-"
+    else:
+        result += ch
+print(result)

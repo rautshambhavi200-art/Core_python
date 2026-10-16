@@ -1,0 +1,12 @@
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+missing_in_b = set()
+missing_in_a = set()
+for x in a:
+    if x not in b:
+        missing_in_b.add(x)
+for x in b:
+    if x not in a:
+        missing_in_a.add(x)
+print("In first but not second:", missing_in_b)
+print("In second but not first:", missing_in_a)

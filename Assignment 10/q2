@@ -1,0 +1,9 @@
+nums = [12, 5, 27, 8, 3]
+largest = smallest = nums[0]
+for num in nums[1:]:
+    if num > largest:
+        largest = num
+    if num < smallest:
+        smallest = num
+print("Maximum:", largest)
+print("Minimum:", smallest)

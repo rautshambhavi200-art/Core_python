@@ -1,0 +1,8 @@
+data = {"name": "Asha", "age": 21}
+key = "age"
+found = False
+for item in data:
+    if item == key:
+        found = True
+        break
+print("Key exists" if found else "Key does not exist")

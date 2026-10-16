@@ -1,0 +1,7 @@
+text = "PYTHON"
+n = 3
+result = ""
+for i in range(len(text)):
+    if i != n - 1:
+        result += text[i]
+print(result)

@@ -1,0 +1,13 @@
+a = "Python"
+b = "Programming"
+count_a = count_b = 0
+for ch in a:
+    count_a += 1
+for ch in b:
+    count_b += 1
+if count_a > count_b:
+    print(a)
+elif count_b > count_a:
+    print(b)
+else:
+    print("Both strings have equal length")

@@ -1,0 +1,11 @@
+words = ["cat", "dog", "cat", "bird", "dog", "cat"]
+unique_words = set(words)
+frequency = {}
+for word in unique_words:
+    count = 0
+    for item in words:
+        if item == word:
+            count += 1
+    frequency[word] = count
+print("Unique words:", unique_words)
+print("Frequency:", frequency)
